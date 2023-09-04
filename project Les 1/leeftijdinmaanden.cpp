@@ -2,5 +2,7 @@
 
 int main()
 {
-	int
+	int leeftijd
+		printf("wat is je leeftijd")
+
 }
