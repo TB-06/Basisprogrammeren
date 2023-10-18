@@ -1,25 +1,22 @@
+}
 #include <stdio.h>
-int printevensom(int n);
+int gemiddelde(int* arr, int lenght);
 int main()
 {
-	int n = 5;
-	scanf_s("%d", &n);
-	if (n % 2 > 0)
-	{
-		n = n - 1;
-	}
-	
-	
-	printf("%d", printevensom(n));
-	
+	int arr[] = { 1, 3, 5, 6, 12, 6, 9, 14 };
+	int length = sizeof(arr) / sizeof(arr[0]);
+
+	printf("%d", gemiddelde(arr, length));
 	return 0;
 }
 
-int printevensom(int n)
+int gemiddelde(int* arr, int lenght)
 {
-	int som = 0;
-	for (int i = 0; i < n; i=i+2)
-		som = som + i;
-	printf("%d", som);
-	return n = som;
+	int a = 0, lul = 0;
+	for (int i = 0; i < lenght; i++)
+	{
+		lul = lul + arr[i];
+	}
+
+	return lul / lenght;
 }
